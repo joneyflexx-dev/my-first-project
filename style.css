@@ -3,86 +3,92 @@ body {
     margin: 0;
     padding: 0 40px;
     line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
 }
 
 nav {
     padding: 20px 0;
     text-align: center;
+    background-color: #1f2937;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    color: white;
+}
+
+nav a:hover {
+    color: #60a5fa;
 }
 
 header {
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 h1 {
     font-size: 45px;
+    color: #1f2937;
 }
 
 h2 {
+    color: #2563eb;
     margin-top: 40px;
 }
 
 section {
-    margin-bottom: 30px;
+    background-color: white;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
+.project-card {
     padding: 20px;
-}
-.profile {
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #eef2ff;
 }
 
 .button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
 }
-.project-card {
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+footer {
+    text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    border: 1px solid black;
-    max-width: 500px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.project-card h3 {
-    margin-top: 0;
-}
-@media (max-width: 600px) {
-
-    body {
-        padding: 0 20px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    .project-card {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
+.skill-card {
+    background-color: #eef2ff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
 }
